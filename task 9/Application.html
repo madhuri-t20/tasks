@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Application Form </title>
+</head>
+
+<body>
+    <center>
+        <h1> TELANGANA STATE ROAD TRANSPORT CORPORATION </h1>
+        <h1> GENERAL BUS PASS APPLICATION </h1>
+    </center>
+    <form method="get" action="./Application.html">
+        <fieldset>
+            <legend> Applicant Details </legend>
+            <lebel for="Name">Name</lebel>
+            <input type="text" id="Name" name="name" pattern="[a-zA-Z]{,20}" required>
+            &nbsp &nbsp
+            <leble for="Father's Name">Father's/Guardian's Name</leble>
+            <input type="text" id="Father's Name" pattern="[a-zA-Z]{,20}" required>
+            <br><br>
+            <leble for="Dob">Date of Birth</leble>
+            <input type="date" id="Dob" name="Date" required>
+            &nbsp &nbsp
+            <leble for="Gender">Gender</leble>
+            <input type="radio" name="gender" value="Male" id="Gender" required>Male
+            <input type="radio" name="gender" value="Female" td="Gender" required>Female
+            <br><br>
+            <leble for="Age"> Age </leble>
+            <input type="text" id="Age" pattern="[0-9]{0,2}" required>
+            &nbsp &nbsp
+            <leble for="Aadhaar No" :> Aadhaar No </leble>
+            <input type="text" id="Aadhaar No" pattern="[0-9]{12}" required>
+            <br><br>
+            <leble for="WhatsApp No"> WhatsApp </leble>
+            <input type="text" id="WhatsApp" pattern="\+91[6789][0-9]{9}" required>
+            &nbsp &nbsp
+            <leble for="mail"> E-mail id </leble>
+            <input type="mail" id="mail" pattern="[a-zA-Z0-9.,!#$%^&*()_+=?\/[]|]+@[a-z]+com" required>
+            <br><br>
+            <leble for="myfile"> Photo </leble>
+            <input type="file" name="myfile" id="myfile" required>
+        </fieldset>
+        <fieldset>
+            <legend> Residential Address Details </legend>
+            <leble for="Address">Applicant Address </leble>
+            <textarea id="Address" name="Address" pattern="[a-zA-Z0-9.,/\()]{20}" required> </textarea>
+            &nbsp &nbsp
+            <leble for="District">District</leble>
+            <select id="District" name="District">
+                <option value="Hyderabad"> Hyderabad </option>
+            </select>
+            <br><br>
+            <leble for="Mandal"> Mandal </leble>
+            <select id="Mandal" name="Mandal">
+                <option value="Hyderabad"> Hyderabad </option>
+            </select>
+            &nbsp &nbsp
+            <leble for="Village"> Village </leble>
+            <select id="Village" name="Village">
+                <option value="Hyderabad"> Hyderabad </option>
+            </select>
+            <br><br>
+            <leble for="Pincode"> Pincode </leble>
+            <input type="text" id="Pincode" name="Pincode" pattern="[0-9]{6}" required>
+        </fieldset>
+        <fieldset>
+            <legend> Password Type Details </legend>
+            <leble for="City"> City </leble>
+            <select id="City" name="City">
+                <option value="Hyderabad"> Hyderabad </option>
+            </select>
+            <br><br>
+            <lable for="Pass Type">Pass Type</lable>
+            <select id="Pass Type" name="----select----">
+                <option value="----select----"> ----select----</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> Mode of Payment & Pass Collection </legend>
+            <leble for="Payment"> Payment </leble>
+            <select id="Payment" name="Select Payment Mode">
+                <option value="Select Payment Mode">Select Payment Mode</option>
+            </select>
+            <br><br>
+            <leble for="Pass Delivery Mode"> Pass Delivery Mode </leble>
+            <select id="Pass Delivery Mode" name="select Pass Delivery Mode">
+                <option value=" select Pass Delivery Mode"> select Pass Delivery Mode </option>
+            </select>
+            <br><br>
+            <leble for="Center at which you want to Collect Pass">Center at which you want to Collect Pass</leble>
+            <select id="Center at which you want to Collect Pass" name="----select----">
+                <option value="select">----select----</option>
+            </select>
+        </fieldset>
+        <center> <img src="./captcha.png" width="200">
+            <br>
+            <input type="text" name="captcha" pattern="1Cc7yy" required>
+            <br>
+            <input type="submit">
+        </center>
+    </form>
+</body>
+
+</html>
